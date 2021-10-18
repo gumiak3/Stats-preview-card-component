@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body{
+    background:hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size:15px;
+
+}
+.container{
+    top:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left:50%;
+    right:50%;
+    width:1080px;
+    border-radius:10px;
+    color:white;
+    background:hsl(244, 38%, 16%);
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.statistics{
+    font-family: 'Lexend Deca', sans-serif;
+    width:100%;
+    display:inline-grid;
+    gap:2.5rem;
+}
+.statistics p{
+    font-size:x-small;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1px;
+}
+.statistics h6{
+    margin:80px 0 0 0;
+}
+
+.left-header{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.left-block{
+    text-align: left;
+    padding: 6% 20% 6% 20%;
+}
+.description{
+    margin-top:10%;
+    text-align: left;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size:small;
+    line-height: 20px;
+}
+@media(max-width:1200px){
+    .container{
+        display:grid;
+        width:520px;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .left-block{ 
+        order:2;
+        text-align: center;
+    }
+    .right-block{
+        background-image:url("./images/image-header-mobile.jpg");
+        width:100%;
+        height:300px;
+        order:1;
+        border-radius:10px 10px 0 0;
+    }
+    .right-block div{
+        border-radius: 10px 10px 0 0;
+    }
+    .statistics{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .statistics h6{
+        margin:0;
+        text-align:center;
+    }
+    .statistics p{
+        text-align:center;
+    }
+    .description{
+        text-align: center;
+    }
+
+}
+@media(min-width:1201px){
+    .right-block{
+        border-radius: 0 10px 10px 0;
+    }
+    .right-block div{
+        border-radius: 0 10px 10px 0;
+    }
+    .statistics{
+        grid-template-columns: repeat(3,3fr);
+    }
+}
+@media(max-width:600px){
+    .container{
+        margin-top:15%;
+        width:90%;
+    }
+}
+
+.right-block{
+    background-image:url("./images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.right-block div{
+    width:100%;
+    height: 100%;
+    background-color:rgba(96, 27, 143, 0.7);
+   
+}
+
+.middle-word{
+    color:hsl(277, 64%, 61%);
+}
