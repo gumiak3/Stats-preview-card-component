@@ -13,7 +13,7 @@ body{
     transform: translate(-50%, -50%);
     left:50%;
     right:50%;
-    width:1080px;
+    width:1110px;
     border-radius:10px;
     color:white;
     background:hsl(244, 38%, 16%);
@@ -43,7 +43,7 @@ body{
 }
 .left-block{
     text-align: left;
-    padding: 6% 20% 6% 20%;
+    padding: 6% 16% 6% 16%;
 }
 .description{
     margin-top:10%;
